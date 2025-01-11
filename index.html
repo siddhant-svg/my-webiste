@@ -3,115 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flower for a flower</title>
-    <style>
-        /* Body styling */
-        body {
-            margin: 0;
-            height: 100vh;
-            background: #34495E; /* A soft slate blue-green background */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Arial', sans-serif;
-            overflow: hidden;
-        }
-
-        /* Container for the image and greenery */
-        .image-container {
-            position: relative;
-            width: 400px;
-            height: 500px;
-            opacity: 0;
-            transform: translateY(100px);
-            animation: popUp 2s ease-in-out forwards;
-        }
-
-        /* Image styling */
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Greenery - leaves */
-        .greenery {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        /* Leaf styling */
-        .leaf {
-            position: absolute;
-            background: #2ECC71; /* A fresh green shade */
-            border-radius: 50% 50% 10% 10%; /* Natural leaf shape */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adding depth with shadow */
-            opacity: 0.9;
-            animation: leafAnimation 4s ease-in-out infinite;
-        }
-
-        .leaf-1 { width: 140px; height: 80px; top: 60%; left: 5%; transform: rotate(-25deg); }
-        .leaf-2 { width: 150px; height: 90px; top: 70%; left: 20%; transform: rotate(15deg); }
-        .leaf-3 { width: 130px; height: 75px; top: 50%; right: 5%; transform: rotate(45deg); }
-        .leaf-4 { width: 120px; height: 70px; top: 80%; right: 10%; transform: rotate(-10deg); }
-        .leaf-5 { width: 160px; height: 90px; top: 55%; left: 35%; transform: rotate(35deg); }
-        .leaf-6 { width: 140px; height: 80px; top: 75%; left: 50%; transform: rotate(-45deg); }
-        .leaf-7 { width: 130px; height: 75px; top: 60%; right: 25%; transform: rotate(20deg); }
-
-        /* Animation for the image pop-up */
-        @keyframes popUp {
-            0% { opacity: 0; transform: translateY(100px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Animation for leaf movement */
-        @keyframes leafAnimation {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
-            50% { transform: translateY(-15px) rotate(20deg); opacity: 1; }
-            100% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
-        }
-
-        /* Message styling */
-        .message {
-            margin-top: 20px;
-            font-size: 2rem;
-            color: white;
-            text-align: center;
-            opacity: 0;
-            animation: fadeInMessage 2s ease-in 3s forwards;
-        }
-
-        /* Animation for message fade-in */
-        @keyframes fadeInMessage {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Image container with greenery -->
-    <div class="image-container">
-        <img src="https://tse4.mm.bing.net/th?id=OIP.MsPEaRNwaWsUkRDTBX9q1wHaE_&rs=1&pid=ImgDetMain" alt="White Rose">
+    <div class="message-container">
+        <h1>Happy Birthday, [Friend's Name]!</h1>
+        <p>Wishing you a day filled with joy, laughter, and all the wonderful things that life has to offer. 🎉🎂🎁</p>
     </div>
 
-    <!-- Greenery (leaves) -->
-    <div class="greenery">
-        <div class="leaf leaf-1"></div>
-        <div class="leaf leaf-2"></div>
-        <div class="leaf leaf-3"></div>
-        <div class="leaf leaf-4"></div>
-        <div class="leaf leaf-5"></div>
-        <div class="leaf leaf-6"></div>
-        <div class="leaf leaf-7"></div>
-    </div>
-
-    <!-- Message -->
-    <p class="message">For you, cutie 💕</p>
+    <script src="snowflakes.js"></script>
 </body>
 </html>
